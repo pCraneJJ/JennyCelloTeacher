@@ -17,7 +17,6 @@
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">    
     <script src="assets/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
        
 </head>
 <body>
@@ -99,21 +98,21 @@
                         <img src="assets/images/photo.jpg" alt="Second slide" class="pull-left" style="padding-right: 10px;">
                         <p style="font-size: 11px; font-weight: 600;" class="text-justify">
 							Jenny Crane is a multi-faceted cellist who is passionate about performing New Music. 
-							She currently teaches out of Calgary and records music collaborating in any type of genre. 
-							She holds a master’s degree in music from the San Francisco Conservatory of Music and an 
-							undergraduate degree from the University of Montreal. She has 5 + years of experience as a 
-							cello teacher from all ages - beginner to advanced. 
+							She currently teaches out of Calgary and records music, collaborating in any type of genre. 
+							She holds a master’s degree in music from the San Francisco Conservatory and an 
+							undergraduate degree from the University of Montreal. She has over five years of experience as a 
+							cello teacher from all ages:  beginner to advanced. 
                         </p>
-						<p style="font-size: 11px; font-weight: 600;" class="text-justify">
-                            She began her cello studies with John Kadz
-							 in Calgary, Alberta, at Mount Royal University’s conservatory program. There, Jenny had the 
-							 opportunity to learn from mentors such as Andres Diaz, Laurence Lesser, Anton Kuerti, 
-							 Hans Jorgen-Jensen, Desmond Hoebig, and Ron Leonard. A highlight in her career was performing 
-							 for the composer Krzystof Penderecki at the Morningside Music bridge international music program 
-							 in Gdansk Poland, playing movements from his Divertimento for solo cello. In Calgary she performs 
-							 with the jazz band Czarkologie and works with music producers, composing and recording music 
-							 for the cello spanning multiple music genres. 
-                        </p>                       
+						<!-- <p style="font-size: 11px; font-weight: 600;" class="text-justify"> -->
+                            <!-- She began her cello studies with John Kadz -->
+							 <!-- in Calgary, Alberta, at Mount Royal University’s conservatory program. There, Jenny had the  -->
+							 <!-- opportunity to learn from mentors such as Andres Diaz, Laurence Lesser, Anton Kuerti,  -->
+							 <!-- Hans Jorgen-Jensen, Desmond Hoebig, and Ron Leonard. A highlight in her career was performing  -->
+							 <!-- for the composer Krzystof Penderecki at the Morningside Music bridge international music program  -->
+							 <!-- in Gdansk Poland, playing movements from his Divertimento for solo cello. In Calgary she performs  -->
+							 <!-- with the jazz band Czarkologie and works with music producers, composing and recording music  -->
+							 <!-- for the cello spanning multiple music genres.  -->
+                        <!-- </p>                        -->
 					</div>
 
 				</div>
@@ -268,7 +267,7 @@
                                 <div class="pfblock-line"></div>
                                 <div class="pfblock-subtitle">
                                     I believe that becoming an accomplished musician is not about the number of hours practise invested but rather the quality of mindful
-									listening guided by a teacher providing guidance.  Often progress may be advanced through small changes in the way we play.
+									listening guided by a teacher.  Often substantial progress may come through small changes in the way we play.
                                 </div>
                             </div>
 
@@ -415,23 +414,24 @@
 
 				<div class="col-sm-6 col-sm-offset-3">
 
-					<form id="contact-form" role="form">
+					<form id="myform" role="form">
 						<div class="ajax-hidden">
+						    <input type="hidden" name="contact_number">
 							<div class="form-group wow fadeInUp">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+								<label class="sr-only" for="user_name">Name</label>
+								<input type="text" id="from_name" class="form-control" name="from_name" placeholder="Name">
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-								<label class="sr-only" for="c_email">Email</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+								<label class="sr-only" for="reply_to">Email</label>
+								<input type="email" id="reply_to" class="form-control" name="reply_to" placeholder="E-mail">
 							</div>
 
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+								<textarea class="form-control" id="message_html" name="message_html" rows="7" placeholder="Message"></textarea>
 							</div>
 
-							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+							<button id="myformbutton" type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
 						</div>
 						<div class="ajax-response"></div>
 					</form>
@@ -485,6 +485,7 @@
 
 	<!-- Javascript files -->
 
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
