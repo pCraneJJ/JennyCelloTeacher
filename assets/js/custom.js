@@ -10,7 +10,7 @@
 	});
 
 	$(document).ready(function() {
-
+		emailjs.init("user_dJGGq3YNtU8oVwM1G3zLR");	 //jemn2Plam
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
 		/* ---------------------------------------------- */
@@ -132,38 +132,29 @@
 		 * Contact form ajax
 		/* ---------------------------------------------- */
 
-		$('#contact-form').submit(function(e) {
+		$('#myform').submit(function(e) {
 
 			e.preventDefault();
+					var params = $('#myform').serializeArray().reduce(function(obj, item) {
+				 obj[item.name] = item.value;
+				 return obj;
+			  }, {});
 
-			var c_name = $('#c_name').val();
-			var c_email = $('#c_email').val();
-			var c_message = $('#c_message ').val();
-			var response = $('#contact-form .ajax-response');
-			
-			var formData = {
-				'name'       : c_name,
-				'email'      : c_email,
-				'message'    : c_message
-			};
+		   var service_id = "patrick_crane";
+		   var template_id = "template_KHYTTmrV";
+
+			var c_name = $('#from_name').val();
+			var c_email = $('#reply_to').val();
+			var c_message = $('#message_html').val();
+			var response = $('#myform .ajax-response');
 
 			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
-				response.fadeIn(500);
-				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+				 response.fadeIn(500);
+				 response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
 			}
-
 			else {
-					 $.ajax({
-							type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-							url         : 'assets/php/contact.php', // the url where we want to POST
-							data        : formData, // our data object
-							dataType    : 'json', // what type of data do we expect back from the server
-							encode      : true,
-							success		: function(res){
-											var ret = $.parseJSON(JSON.stringify(res));
-											response.html(ret.message).fadeIn(500);
-							}
-						});
+				var service_id = "patrick_crane";
+				//emailjs.send(service_id, template_id, params)
 				}           
             	return false;
 			});
