@@ -1,5 +1,17 @@
 (function($){
 
+	// scroll function
+	function scrollToID(id, speed){
+		var offSet = 50;
+		var targetOffset = $(id).offset().top - offSet;
+		var mainNav = $('#main-nav');
+		$('html,body').animate({scrollTop:targetOffset}, speed);
+		if (mainNav.hasClass("open")) {
+			mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+			mainNav.removeClass("open");
+		}
+	}
+
 	/* ---------------------------------------------- /*
 	 * Preloader
 	/* ---------------------------------------------- */
@@ -19,7 +31,7 @@
            
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
+				scrollTop: $(anchor.attr('href')).offset().top - 60
 			}, 1000);
 			e.preventDefault();
 		});
@@ -44,7 +56,6 @@
 			target: '.navbar-custom',
 			offset: 70
 		})
-
         
         /* ---------------------------------------------- /*
 		 * Skills
