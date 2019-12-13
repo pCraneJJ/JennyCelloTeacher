@@ -1,6 +1,5 @@
 (function($){
-
-	// scroll function
+	
 	function scrollToID(id, speed){
 		var offSet = 50;
 		var targetOffset = $(id).offset().top - offSet;
@@ -20,20 +19,31 @@
 		$('#status').fadeOut();
 		$('#preloader').delay(300).fadeOut('slow');
 	});
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide');
+	});
 
 	$(document).ready(function() {
 		emailjs.init("user_dJGGq3YNtU8oVwM1G3zLR");	 //jemn2Plam
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
 		/* ---------------------------------------------- */
-
+		
 		$('a[href*=#]').bind("click", function(e){
-           
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 60
-			}, 1000);
 			e.preventDefault();
+			var anchor = $(this);
+			//var sectionID = $(this).attr("data-id");
+			//scrollToID('#' + sectionID, 750);
+			scrollToID($(anchor.attr('href')),1000);
+			//  var anchor = $(this);
+			//  $('html, body').stop().animate({
+			//  	scrollTop: $(anchor.attr('href')).offset().top - 25
+			//  }, 1000);
+			//  if (mainNav.hasClass("open")) {
+			// 	mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+			// 	mainNav.removeClass("open");
+			// }
+			// e.preventDefault();
 		});
 
 		$(window).scroll(function() {
@@ -119,7 +129,6 @@
 			$('#home').parallax('50%', 0.1);
 		}
 
-
 		/* ---------------------------------------------- /*
 		 * WOW Animation When You Scroll
 		/* ---------------------------------------------- */
@@ -128,7 +137,6 @@
 			mobile: false
 		});
 		wow.init();
-
 
 		/* ---------------------------------------------- /*
 		 * E-mail validation
@@ -151,7 +159,7 @@
 				 return obj;
 			  }, {});
 
-		   var service_id = "patrick_crane";
+		   var service_id = "jenny_crane";
 		   var template_id = "template_KHYTTmrV";
 
 			var c_name = $('#from_name').val();
@@ -161,11 +169,15 @@
 
 			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
 				 response.fadeIn(500);
-				 response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+				 response.html('<i class="fa fa-warning"></i> Please provide an email, name and message.');
 			}
 			else {
-				var service_id = "patrick_crane";
-				//emailjs.send(service_id, template_id, params)
+				var service_id = "jenny_crane";
+				emailjs.send(service_id, template_id, params);
+				var message = 'Thank you for your email xxx.'.replace('xxx',c_name);
+				var success = '<i class="fa fa-check"></i>xxx'.replace('xxx', message) +
+				'</br><i class="fa fa-bookmark"></i>&nbsp;&nbsp;I will be back to you.';
+				response.html(success);
 				}           
             	return false;
 			});
