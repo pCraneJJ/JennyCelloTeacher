@@ -349,7 +349,7 @@ textarea.form-control {
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	/* background-position: 50% 50%; */
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -698,10 +698,12 @@ textarea.form-control {
 		text-transform: unset;
 		font-family: Raleway, sans-serif; 
 	}
+	.figcaption {
+		font-size: x-small;
+	}
 }
 
 @media (max-width: 480px) {
-
 	h1 {
 		font-size: 34px;
 		letter-spacing: 3px;
@@ -712,9 +714,7 @@ textarea.form-control {
 		margin: 0 0 30px;
 		letter-spacing: 3px;
 	}
-
 }
-
 
 /*--------------------------------*/
 /***** Portfolio Common style *****/
