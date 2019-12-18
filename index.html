@@ -1,147 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<link rel="icon" 
+		type="image/png" 
+		href="favicon.png"> 
+
 <head>
+	<title>Jenny Crane - Cello Teacher and Studio Musician</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>Jenny Crane - Cellist</title>
-
+	<meta name="keywords" content="Calgary, musician, music teacher">
+	<meta name="description" content="Personal web page show casing Jenny Crane's diverse music style and abilities.">
+	<meta name="author" content="Patrick Crane">
 	<!-- CSS -->
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/bootstrap/css/bootstrap.3.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
-
-	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 	<link href="assets/css/jsplayer.css" rel="stylesheet" media="screen">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">		
 	<script src="assets/js/modernizr.custom.js"></script>
 </head>
 
 <body>
-
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status"></div>
-	</div>
-
-	<!-- Home start -->
-	<section id="home" class="pfblock-image screen-height">
-		<div class="home-overlay"></div>
-		<div class="intro">
-			<div class="start">Hello, my name is Jenny Crane and I am a</div>
-			<h2>Cellist</h2>
-			<!-- <div class="start">Developing better cello players - young and old.</div> -->
-		</div>
-
-		<a href="#mybio">
-			<div class="scroll-down">
-				<span>
-					<i class="fa fa-angle-down fa-2x"></i>
-				</span>
-			</div>
-		</a>
-
-	</section>
-
-	<!-- Home end -->
+	</div>	
 
 	<!-- Navigation start -->
-
 	<header class="header">
-
-		<nav class="navbar navbar-custom" role="navigation">
-
-			<div class="container">
-
+		<div class="container">
+			<nav class="navbar navbar-custom" role="navigation">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Cello</a>
+					<!-- <a href="#" style="cursor: pointer;" class="navbar-brand scroll-top">Cello</a> -->
 				</div>
-
-				<div class="collapse navbar-collapse" id="custom-collapse">
+				<div class="collapse navbar-collapse" id="main-nav">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#mybio">About Me</a></li>
-						<li><a href="#portfolio">Studio Recording</a></li>
-						<li><a href="#skills">Lessons</a></li>
-						<li><a href="#youtube">My Music</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#" data-id="mybio" class="scroll-link">About Me</a></li>
+						<li><a href="#" data-id="studio" class="scroll-link">Studio Recording</a></li>
+						<li><a href="#" data-id="skills" class="scroll-link">Lessons</a></li>
+						<li><a href="#" data-id="contact" class="scroll-link">Contact</a></li>
 					</ul>
 				</div>
-
-			</div><!-- .container -->
-
-		</nav>
-
+			</nav>	
+		</div>
 	</header>
-
 	<!-- Navigation end -->
 
-	<!-- My bio start -->
+	<!-- Home start -->
+	<section id="home" class="pfblock-image screen-height">
+			<div class="home-overlay"></div>
+			<div class="intro">
+				<div class="start, text-center">Hello, my name is Jenny Crane and I am a</div>
+				<h2>Cellist</h2>			
+			</div>
+			<a href="#mybio">
+				<div class="scroll-down">
+					<span>
+						<i class="fa fa-angle-down fa-2x"></i>
+					</span>
+				</div>
+			</a>
+	</section>
+	<!-- Home end -->
 
+	<!-- My bio start -->
 	<section id="mybio" class="pfblock pfblock-gray">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-8 col-sm-offset-2">
-
 					<div class="pfblock-header wow fadeInUp">
-
-						<!--<h3>Jenny Crane, cellist</h3>-->
+						<!-- <h3>Jenny Crane, cellist</h3> -->
 						<img src="assets/images/photo.jpg" alt="Second slide" class="pull-left" style="padding-right: 10px;">
 						<p style="font-size: 11px; font-weight: 600;" class="text-justify">
-							Jenny Crane is a multi-faceted cellist who is passionate about performing New Music.
-							She currently teaches out of Calgary and records music, collaborating in any type of genre.
-							She holds a master’s degree in music from the San Francisco Conservatory and an
-							undergraduate degree from the University of Montreal. She has over five years of experience as a
-							cello teacher from all ages: beginner to advanced.
+							I am a multi-faceted cellist who plays music from Bach to Hip Hop.
+							I teach in Calgary and have my own recording studio.
+							I hold a master’s degree in music from the San Francisco Conservatory and an
+							undergraduate degree from the University of Montreal. 
 						</p>
-						<!-- <p style="font-size: 11px; font-weight: 600;" class="text-justify"> -->
-						<!-- She began her cello studies with John Kadz -->
-						<!-- in Calgary, Alberta, at Mount Royal University’s conservatory program. There, Jenny had the  -->
-						<!-- opportunity to learn from mentors such as Andres Diaz, Laurence Lesser, Anton Kuerti,  -->
-						<!-- Hans Jorgen-Jensen, Desmond Hoebig, and Ron Leonard. A highlight in her career was performing  -->
-						<!-- for the composer Krzystof Penderecki at the Morningside Music bridge international music program  -->
-						<!-- in Gdansk Poland, playing movements from his Divertimento for solo cello. In Calgary she performs  -->
-						<!-- with the jazz band Czarkologie and works with music producers, composing and recording music  -->
-						<!-- for the cello spanning multiple music genres.  -->
-						<!-- </p>                        -->
 					</div>
-
 				</div>
-
 			</div>
-
 			<div class="row">
-
-				<div class="col-sm-4">
-
+				<div class="col-md-6 col-sm-12">
 					<div class="iconbox wow slideInLeft">
 						<div class="iconbox-icon">
 							<span class="icon-magic-wand"></span>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">On-line Lessons</h3>
+							<h3 class="iconbox-title">Lessons</h3>
 							<div class="iconbox-desc">
-								Learn from your home. It is important to set aside a consistent lesson day. Record your lessons for review
-								during your practice hours.
+								I teach at my studio.  You may also choose to learn from your home wherever that might be
+								through Skype.  I can help you get it set-up.  
+								<a href="#mymusic">See feedback from my clients.</a>
 							</div>
 						</div>
 					</div>
-
 				</div>
-
-				<div class="col-sm-4">
-
+				<div class="col-md-6 col-sm-12">
 					<div class="iconbox wow slideInLeft">
 						<div class="iconbox-icon">
 							<span class="icon-screen-smartphone"></span>
@@ -149,335 +113,220 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Studio Musician</h3>
 							<div class="iconbox-desc">
-								I have my own recording studio and collaborate with other musicians locally and internationally.
-								<a href="#mymusic">See feedback from my clients.</a>
+								I have my own recording studio.  I can work with you in composing or improvising an electric or traditional
+								cello track enriching your video or music production.
+							</br>
+							<a href="#myMusic">Listen to my recordings.</a>
 							</div>
 						</div>
 					</div>
-
 				</div>
-
-				<div class="col-sm-4">
-
-					<div class="iconbox wow slideInLeft">
-						<div class="iconbox-icon">
-							<span class="icon-puzzle"></span>
-						</div>
-						<div class="iconbox-text">
-							<h3 class="iconbox-title">Cello Styles</h3>
-							<div class="iconbox-desc">
-								My repertoire includes Classical, Contemporary, Jazz, Hip Hop, and Pop genres. I also play electric cello and
-								use a loop pedal.
-							</div>
-						</div>
-					</div>
-
-				</div>
-
 			</div><!-- .row -->
-		</div><!-- .container -->
+		</div>
 	</section>
-
-	<!-- Services end -->
-
-	<!-- Portfolio start -->
-
-	<section id="portfolio" class="pfblock">
-		<div class="container">
+	<!-- My bio end -->
+	
+	<section id="myMusic" class="pfblock" style="padding: 20px 0 20px;">		
 			<div class="row">
-
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">My Music</h2>
+						<h2 class="pfblock-title">My Music and Performances</h2>
 						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-							I enjoy many genres of music as a cellist, composer and singer.
-						</div>
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
-
-
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-4 col-md-4">
-
-					<div class="grid wow zoomIn">
-						<figure class="effect-bubba">
-							<img src="assets/images/stock-photo-part-of-cello-221691775.jpg" alt="img01" />
-							<figcaption>
-								<h2 style='color:black;'>Traditional <span>Cello</span></h2>
-								<p>There are 400 years of wonderful cello music for every musical level.</p>
-							</figcaption>
-						</figure>
+			<div class="container-jsp">
+				<audio id="audio" preload="none" tabindex="0">
+					<source src="assets/music/Rose gold.wav" data-track-number="1" />
+					<source src="https://archive.org/download/ra2007-07-21/ra2007-07-21d1t05_64kb.mp3" data-track-number="2" />
+					<source src="https://archive.org/download/slac2002-02-15/slac2002-02-15d1t07_64kb.mp3" data-track-number="3" />
+					<source src="https://archive.org/download/blitzentrapper2009-02-24.flac16/blitzentrapper2009-02-24t02_64kb.mp3"
+					 data-track-number="4" />			
+					Your browser does not support HTML5 audio.
+				</audio>
+				<div class="player">
+					<div class="large-toggle-btn">
+						<i class="large-play-btn"><span class="screen-reader-text">Large toggle button</span></i>
 					</div>
-
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-4">
-
-					<div class="grid wow zoomIn">
-						<figure class="effect-bubba">
-							<img src="assets/images/silent-cello.jpg" alt="img01" />
-							<figcaption>
-								<h2 style='color:black;'>Electric <span>Cello</span></h2>
-								<p>Electic cello can be expressive in a broad range of repertoire from Rock to New Music.</p>
-							</figcaption>
-						</figure>
-					</div>
-
-				</div>
-
-				<div class="col-xs-12 col-sm-4 col-md-4">
-
-					<div class="grid wow zoomIn">
-						<figure class="effect-bubba">
-							<img src="assets/images/item-3.jpg" alt="img01" />
-							<figcaption>
-								<h2>New<span><a href="#youtube">Music</a></span></h2>
-								<p>Music spanning the last 100 years.</p>
-							</figcaption>
-						</figure>
-					</div>
-
-				</div>
-
-			</div>
-
-
-		</div><!-- .container -->
-
-	</section>
-
-	<!-- Portfolio end -->
-
-	<!-- Skills start -->
-
-	<section class="pfblock pfblock-grayx" id="skills">
-
-		<div class="container">
-
-			<div class="row skills" style="background-image: url(assets/images/backgroundStaff.jpg); background-repeat: repeat-y; height: 100%; width: 100%;">
-
-				<div class="row">
-
-					<div class="col-sm-6 col-sm-offset-3">
-
-						<div class="pfblock-header wow fadeInUp">
-							<h2 class="pfblock-title">Your Musical Development</h2>
-							<div class="pfblock-line"></div>
-							<div class="pfblock-subtitle">
-								I believe that becoming an accomplished musician is not about the number of hours practise invested but rather
-								the quality of mindful
-								listening guided by a teacher. Often substantial progress may come through small changes in the way we play.
+					<!-- /.play-box -->	
+					<div class="info-box">
+						<div class="track-info-box">
+							<div class="track-title-text"></div>
+							<div class="audio-time">
+								<span class="current-time">00:00</span> /
+								<span class="duration">00:00</span>
 							</div>
 						</div>
-
+						<!-- /.info-box -->
+						<div class="progress-box">
+							<div class="progress-cell">
+								<div class="progress">
+									<div class="progress-buffer"></div>
+									<div class="progress-indicator"></div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<!-- /.progress-box -->	
+					<div class="controls-box">
+						<i class="previous-track-btn disabled"><span class="screen-reader-text">Previous track button</span></i>
+						<i class="next-track-btn"><span class="screen-reader-text">Next track button</span></i>
+					</div>
+					<!-- /.controls-box -->	
+				</div>
+				<!-- /.player -->
+	
+				<div class="play-list">	
+					<div class="play-list-row" data-track-row="1">
+						<div class="small-toggle-btn">
+							<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+						</div>
+						<div class="track-number">
+						</div>
+						<div class="track-title">
+							<a class="playlist-track" href="#" data-play-track="1">Rose Gold</a>
+						</div>
+					</div>
+					<div class="play-list-row" data-track-row="2">
+						<div class="small-toggle-btn">
+							<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+						</div>
+						<div class="track-number">
+						</div>
+						<div class="track-title">
+							<a class="playlist-track" href="#" data-play-track="2">Ryan Adams &amp; The Cardinals - Cold Roses</a>
+						</div>
+					</div>
+					<div class="play-list-row" data-track-row="3">
+						<div class="small-toggle-btn">
+							<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+						</div>
+						<div class="track-number">
+						</div>
+						<div class="track-title">
+							<a class="playlist-track" href="#" data-play-track="3">The Slackers - Married Girl</a>
+						</div>
+					</div>
+					<div class="play-list-row" data-track-row="4">
+						<div class="small-toggle-btn">
+							<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+						</div>
+						<div class="track-number">
+						</div>
+						<div class="track-title">
+							<a class="playlist-track" href="#" data-play-track="4">Blitzen Trapper - Saturday Night</a>
+						</div>
+					</div>
+				</div>	
+				<!-- <div>Music from the 	<h2 class="pfblock-title">Your Musical Development</h2><a href="https://archive.org/details/etree" target="_blank">Live Music Archive</a></div> -->
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="embed-responsive embed-responsive-16by9 text-center">
+						<iframe class="embed-responsive-item" src="https://youtube.com/embed/nbtwwK_6Bxk" allowfullscreen></iframe>
+					</div>
+				</div> 
+			</div>  
+		</section>
 
-				</div><!-- .row -->
-
-				<div class="col-sm-6 col-md-4 text-center">
-					<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+	<!-- Lessons start -->
+	<section class="pfblock pfblock-gray" id="skills">
+		<div class="container">
+				<h2 class="pfblock-title text-center">Cello Lessons</h2>
+			<div class="row skills">
+				<div class="row skills">			
+						<div class="col-sm-6 col-sm-offset-3">
+							<div class="pfblock-header wow fadeInUp">
+								<div class="pfblock-line"></div>
+								<div class="pfblock-subtitle text-justify" style="color: navy; margin-left: 50px;">							
+								I live in downtown Calgary. Underground heated guest parking
+								is available. You may also choose to learn from your home wherever that might be
+								through Skype. I can help you get it set-up.  I offer half hour and hour lessons at $30CDN and $50CDN respectively.
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+				</br>
+				<div class="row" style="background-image: url(assets/images/backgroundStaff.jpg); background-repeat: repeat-y; height: 100%; width: 100%;">
+					<h3 class="pfblock-title text-center">Your Musical Development</h2>
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<!-- <h2 class="pfblock-title">Your Musical Development</h2> -->
+							<div class="pfblock-line"></div>
+							<div class="pfblock-subtitle" style="color: navy;">
+								I believe that becoming an accomplished musician is not about the number of hours practise invested but rather
+								the quality of mindful listening guided by a teacher. Often substantial progress may come through small changes in the way we play.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="col-sm-12 col-md-4 text-center">
+					<span data-percent="80" class="chart easyPieChart">
 						<span class="percent">80</span>
 					</span>
 					<h3 class="text-center">Practise</h3>
+						We achieve progress through small daily improvements.  
+						They add up and consistency is important so find a time of the day that protected.
+						Perfectionism can be self defeating. Don't get blocked by something you think could be better.  A software app like Modacity on your cellphone can guided
+						you make the most of your daily practice.
 				</div>
-				<div class="col-sm-6 col-md-4 text-center">
+				<div class="col-sm-12 col-md-4 text-center">
 					<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
 						<span class="percent">90</span>
 					</span>
 					<h3 class="text-center">Listen</h3>
+					We can become better musicians by listening to others - and not just other cellists.  Listen to singers too.
 				</div>
-				<div class="col-sm-6 col-md-4 text-center">
+				<div class="col-sm-12 col-md-4 text-center">
 					<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
 						<span class="percent">85</span>
 					</span>
 					<h3 class="text-center">Perform</h3>
+					We have all been through this.  We stand before our audience; place our music which we have been practising everyday for the past six months on our music stand; look out at our audience; look down at our music and we could swear we've never seen this music before.  
+					Play for others at every opportunity.  We develop confidence everytime we perform.
 				</div>
-
-			</div>
-			<!--End row -->
-
-		</div>
-
+			</div>	
+		</div>		
 	</section>
+	<!-- Lessons end -->	
 
-	<!-- Skills end -->
-
-	<section id="youtube" class="pfblock" style="padding: 60px 0 60px;">	
-		
-		<div class="row">
-
-			<div class="col-sm-6 col-sm-offset-3">
-
-				<div class="pfblock-header wow fadeInUp">
-					<h2 class="pfblock-title">My Music and Performances</h2>
-					<div class="pfblock-line"></div>
-				</div>
-			</div>
-
-		</div><!-- .row -->
-
-		<div class="container-jsp">
-
-			<audio id="audio" preload="none" tabindex="0">
-				<source src="assets/music/Rose gold.wav" data-track-number="1" />
-				<source src="https://archive.org/download/ra2007-07-21/ra2007-07-21d1t05_64kb.mp3" data-track-number="2" />
-				<source src="https://archive.org/download/slac2002-02-15/slac2002-02-15d1t07_64kb.mp3" data-track-number="3" />
-				<source src="https://archive.org/download/blitzentrapper2009-02-24.flac16/blitzentrapper2009-02-24t02_64kb.mp3"
-				 data-track-number="4" />			
-				Your browser does not support HTML5 audio.
-			</audio>
-
-			<div class="player">
-
-				<div class="large-toggle-btn">
-					<i class="large-play-btn"><span class="screen-reader-text">Large toggle button</span></i>
-				</div>
-				<!-- /.play-box -->
-
-				<div class="info-box">
-					<div class="track-info-box">
-						<div class="track-title-text"></div>
-						<div class="audio-time">
-							<span class="current-time">00:00</span> /
-							<span class="duration">00:00</span>
-						</div>
-					</div>
-					<!-- /.info-box -->
-
-					<div class="progress-box">
-						<div class="progress-cell">
-							<div class="progress">
-								<div class="progress-buffer"></div>
-								<div class="progress-indicator"></div>
+	<!-- Studio start -->
+	<section class="pfblock pfblock-gray" id="studio">
+		<div class="container">
+			<h2 class="pfblock-title text-center">Studio Recording</h2>
+			<div class="row skills">
+				<div class="row skills">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<div class="pfblock-subtitle text-justify" style="color: navy; margin-left: 50px;">
+								I have my own recording studio built around a MacBook Pro, UA Apollo Twin MK2, Neumann condenser microphone and room treatments.  I  collaborate with other musicians locally and internationally.																
+								<a href="#myMusic">Listen to my recordings.</a>							
+								<a href="#contact">Contact me</a> to discuss what you are looking for.
 							</div>
 						</div>
 					</div>
-
-				</div>
-				<!-- /.progress-box -->
-
-				<div class="controls-box">
-					<i class="previous-track-btn disabled"><span class="screen-reader-text">Previous track button</span></i>
-					<i class="next-track-btn"><span class="screen-reader-text">Next track button</span></i>
-				</div>
-				<!-- /.controls-box -->
-
-			</div>
-			<!-- /.player -->
-
-			<div class="play-list">
-
-				<div class="play-list-row" data-track-row="1">
-					<div class="small-toggle-btn">
-						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
-					</div>
-					<div class="track-number">
-					</div>
-					<div class="track-title">
-						<a class="playlist-track" href="#" data-play-track="1">Rose Gold</a>
-					</div>
-				</div>
-				<div class="play-list-row" data-track-row="2">
-					<div class="small-toggle-btn">
-						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
-					</div>
-					<div class="track-number">
-					</div>
-					<div class="track-title">
-						<a class="playlist-track" href="#" data-play-track="2">Ryan Adams &amp; The Cardinals - Cold Roses</a>
-					</div>
-				</div>
-				<div class="play-list-row" data-track-row="3">
-					<div class="small-toggle-btn">
-						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
-					</div>
-					<div class="track-number">
-					</div>
-					<div class="track-title">
-						<a class="playlist-track" href="#" data-play-track="3">The Slackers - Married Girl</a>
-					</div>
-				</div>
-				<div class="play-list-row" data-track-row="4">
-					<div class="small-toggle-btn">
-						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
-					</div>
-					<div class="track-number">
-					</div>
-					<div class="track-title">
-						<a class="playlist-track" href="#" data-play-track="4">Blitzen Trapper - Saturday Night</a>
-					</div>
 				</div>
 			</div>
-
-			<div>Music from the <a href="https://archive.org/details/etree" target="_blank">Live Music Archive</a></div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://youtube.com/embed/nbtwwK_6Bxk" allowfullscreen></iframe>
-				</div>
-			</div><!-- .row -->
-		</div><!-- .container -->
 	</section>
-
-	<!-- Call to action start -->
-
-	<section class="calltoaction">
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-12 col-lg-12">
-					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
-					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-						I'm available for freelance projects.
-					</div>
-				</div>
-
-				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-					<a href="#contact" class="btn btn-lg">Hire Me</a>
-				</div>
-
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
-
-	<!-- Call to action end -->
+	<!-- Studio end -->
 
 	<!-- Testimonials start -->
-
 	<section id="mymusic" class="pfblock pfblock-gray">
-
 		<div class="container">
-
 			<div class="row">
-
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
+					</br>
 						<h2 class="pfblock-title">What my clients say</h2>
-						<!-- <div class="pfblock-line"></div> -->
-						<!-- <div class="pfblock-subtitle"> -->
-						<!-- She is a professional musician and know very well what you like. She made a very nice video and her performance is fantastic. She is the best and I'm glad to deal with her again. -->
-						<!-- </div> -->
-						<!-- </br> -->
-						<!-- <div class="pfblock-subtitle"> -->
-						<!-- Fast, highly proficient in her skills and would highly recommend! -->
-						<!-- </div> -->
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
-
 			<div class="row">
-
 				<div id="cbp-qtrotator" class="cbp-qtrotator">
 					<div class="cbp-qtcontent">
 						<img src="assets/images/client-1.jpg" alt="client-1" />
@@ -494,25 +343,34 @@
 							<footer>atemproperties - Jan 2019</footer>
 						</blockquote>
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
-
 		</div><!-- .row -->
 	</section>
-
 	<!-- Testimonial end -->
-
+	<!-- Call to action start -->
+	<section class="calltoaction">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						I'm available for freelance projects or lessons.
+					</div>
+				</div>
+				<!-- <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">Hire Me</a>
+				</div> -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- Call to action end -->
 
 	<!-- Contact start -->
-
 	<section id="contact" class="pfblock">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header">
 						<h2 class="pfblock-title">Contact me</h2>
 						<div class="pfblock-line"></div>
@@ -521,15 +379,10 @@
 							available?
 						</div>
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
-
 			<div class="row">
-
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<form id="myform" role="form">
 						<div class="ajax-hidden">
 							<input type="hidden" name="contact_number">
@@ -537,38 +390,29 @@
 								<label class="sr-only" for="user_name">Name</label>
 								<input type="text" id="from_name" class="form-control" name="from_name" placeholder="Name">
 							</div>
-
 							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
 								<label class="sr-only" for="reply_to">Email</label>
 								<input type="email" id="reply_to" class="form-control" name="reply_to" placeholder="E-mail">
 							</div>
-
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
 								<textarea class="form-control" id="message_html" name="message_html" rows="7" placeholder="Message"></textarea>
 							</div>
-
 							<button id="myformbutton" type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send
 								Message</button>
 						</div>
 						<div class="ajax-response"></div>
 					</form>
-
 				</div>
-
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
-
 	<!-- Contact end -->
 
 	<!-- Footer start -->
-
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-12">
-
 					<ul class="social-links">
 						<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
@@ -576,35 +420,28 @@
 						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
 						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
 					</ul>
-
-					<p class="heart">
-						Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Nottingham
-					</p>
 					<p class="copyright">
-						© 2019 Jenny Crane | Images: <a href="https://unsplash.com/">Unsplash</a> & <a href="http://zoomwalls.com/">Zoomwalls</a>
+						©2019 Jenny Crane 
 					</p>
-
 				</div>
-
+				<div>Icons made by <a href="https://www.flaticon.com/<?=_('authors/')?>vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</footer>
-
 	<!-- Footer end -->
 
 	<!-- Scroll to top -->
-
 	<div class="scroll-up">
 		<a href="#home"><i class="fa fa-angle-up"></i></a>
 	</div>
-
 	<!-- Scroll to top end-->
 
-	<!-- Javascript files -->
-
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Javascript files -->	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<!-- <script src="assets/js/jquery-1.11.1.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/bootstrap/js/bootstrap.3.min.js"></script>
+	
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
 	<script src="assets/js/imagesloaded.pkgd.js"></script>
 	<script src="assets/js/jquery.sticky.js"></script>
@@ -615,7 +452,5 @@
 	<script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/jsplayer.js"></script>
-
 </body>
-
 </html>
