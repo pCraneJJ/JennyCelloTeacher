@@ -6,29 +6,24 @@
 		href="favicon.png"> 
 
 <head>
+	<title>Jenny Crane - Cello Teacher and Studio Musician</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Calgary, musician, music teacher">
 	<meta name="description" content="Personal web page show casing Jenny Crane's diverse music style and abilities.">
 	<meta name="author" content="Patrick Crane">
-
-	<title>Jenny Crane - Cello Teacher and Studio Musician</title>
-
 	<!-- CSS -->
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/bootstrap/css/bootstrap.3.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
-
-	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 	<link href="assets/css/jsplayer.css" rel="stylesheet" media="screen">
-		
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">		
 	<script src="assets/js/modernizr.custom.js"></script>
 </head>
 
 <body>
-
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status"></div>
@@ -36,28 +31,30 @@
 
 	<!-- Navigation start -->
 	<header class="header">
-		<nav class="navbar navbar-custom" role="navigation">
-			<div class="container">
+		<div class="container">
+			<nav class="navbar navbar-custom" role="navigation">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					<!-- <a href="#" style="cursor: pointer;" class="navbar-brand scroll-top">Cello</a> -->
 				</div>
-				<div class="collapse navbar-collapse" id="custom-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#mybio" class="scroll-link">About Me</a></li>
-						<li><a href="#portfolio" class="scroll-link">Studio Recording</a></li>
-						<li><a href="#skills" class="scroll-link">Lessons</a></li>
-						<li><a href="#contact" class="scroll-link">Contact</a></li>
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-id="mybio" class="scroll-link">About Me</a></li>
+						<li><a href="#" data-id="studio" class="scroll-link">Studio Recording</a></li>
+						<li><a href="#" data-id="skills" class="scroll-link">Lessons</a></li>
+						<li><a href="#" data-id="contact" class="scroll-link">Contact</a></li>
 					</ul>
 				</div>
-			</div><!-- .container -->
-		</nav>
+			</nav>	
+		</div>
 	</header>
 	<!-- Navigation end -->
+
 	<!-- Home start -->
 	<section id="home" class="pfblock-image screen-height">
 			<div class="home-overlay"></div>
@@ -116,19 +113,20 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Studio Musician</h3>
 							<div class="iconbox-desc">
-								I have my own recording studio built around a MacBook Pro, UA Apollo Twin MK2, Neumann condenser microphone and room treatments.  I  collaborate with other musicians locally and internationally.								
-								</br>
-								<a href="#youtube">Listen to my recordings.</a>
+								I have my own recording studio.  I can work with you in composing or improvising an electric or traditional
+								cello track enriching your video or music production.
+							</br>
+							<a href="#myMusic">Listen to my recordings.</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div><!-- .row -->
-		</div><!-- .container -->
+		</div>
 	</section>
-	<!-- Services end -->
+	<!-- My bio end -->
 	
-	<section id="youtube" class="pfblock" style="padding: 20px 0 20px;">		
+	<section id="myMusic" class="pfblock" style="padding: 20px 0 20px;">		
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
 					<div class="pfblock-header wow fadeInUp">
@@ -224,11 +222,11 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="embed-responsive embed-responsive-16by9">
+					<div class="embed-responsive embed-responsive-16by9 text-center">
 						<iframe class="embed-responsive-item" src="https://youtube.com/embed/nbtwwK_6Bxk" allowfullscreen></iframe>
 					</div>
-				</div><!-- .row -->
-			</div><!-- .container -->
+				</div> 
+			</div>  
 		</section>
 
 	<!-- Lessons start -->
@@ -241,7 +239,7 @@
 							<div class="pfblock-header wow fadeInUp">
 								<div class="pfblock-line"></div>
 								<div class="pfblock-subtitle text-justify" style="color: navy; margin-left: 50px;">							
-								I live at the <a href="https://www.google.com/maps/dir/51.0393044,-114.1361559/smith+calgary+condo+map/@51.0418013,-114.140113,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5371701e515e2ded:0x9d5918fd7c60495c!2m2!1d-114.0773125!2d51.0387965" target="_blank">Smith</a> in downtown Calgary and underground heated guest parking
+								I live in downtown Calgary. Underground heated guest parking
 								is available. You may also choose to learn from your home wherever that might be
 								through Skype. I can help you get it set-up.  I offer half hour and hour lessons at $30CDN and $50CDN respectively.
 								
@@ -249,7 +247,7 @@
 							</div>
 						</div>
 					</div>
-				</div><!-- .row -->				
+				</div>			
 				</br>
 				<div class="row" style="background-image: url(assets/images/backgroundStaff.jpg); background-repeat: repeat-y; height: 100%; width: 100%;">
 					<h3 class="pfblock-title text-center">Your Musical Development</h2>
@@ -263,10 +261,9 @@
 							</div>
 						</div>
 					</div>
-				</div><!-- .row -->
-			</div>		
-
-			<div><!-- .row -->
+				</div>
+			</div>
+			<div>
 				<div class="col-sm-12 col-md-4 text-center">
 					<span data-percent="80" class="chart easyPieChart">
 						<span class="percent">80</span>
@@ -274,7 +271,7 @@
 					<h3 class="text-center">Practise</h3>
 						We achieve progress through small daily improvements.  
 						They add up and consistency is important so find a time of the day that protected.
-						Perfectionism can be self defeating. A software app like Modacity on your cellphone can guided
+						Perfectionism can be self defeating. Don't get blocked by something you think could be better.  A software app like Modacity on your cellphone can guided
 						you make the most of your daily practice.
 				</div>
 				<div class="col-sm-12 col-md-4 text-center">
@@ -285,16 +282,38 @@
 					We can become better musicians by listening to others - and not just other cellists.  Listen to singers too.
 				</div>
 				<div class="col-sm-12 col-md-4 text-center">
-					<span data-percent="85" class="chart easyPieChart" style="width: 100px; height: 100px; line-height: 100px;">
+					<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
 						<span class="percent">85</span>
 					</span>
 					<h3 class="text-center">Perform</h3>
-					Play for others at every opportunity.  Making music is about communication.  We develop confidence everytime we perform.
+					We have all been through this.  We stand before our audience; place our music which we have been practising everyday for the past six months on our music stand; look out at our audience; look down at our music and we could swear we've never seen this music before.  
+					Play for others at every opportunity.  We develop confidence everytime we perform.
 				</div>
-			</div>	<!--End row -->
+			</div>	
 		</div>		
 	</section>
 	<!-- Lessons end -->	
+
+	<!-- Studio start -->
+	<section class="pfblock pfblock-gray" id="studio">
+		<div class="container">
+			<h2 class="pfblock-title text-center">Studio Recording</h2>
+			<div class="row skills">
+				<div class="row skills">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<div class="pfblock-subtitle text-justify" style="color: navy; margin-left: 50px;">
+								I have my own recording studio built around a MacBook Pro, UA Apollo Twin MK2, Neumann condenser microphone and room treatments.  I  collaborate with other musicians locally and internationally.																
+								<a href="#myMusic">Listen to my recordings.</a>							
+								<a href="#contact">Contact me</a> to discuss what you are looking for.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Studio end -->
 
 	<!-- Testimonials start -->
 	<section id="mymusic" class="pfblock pfblock-gray">
@@ -417,11 +436,12 @@
 	</div>
 	<!-- Scroll to top end-->
 
-	<!-- Javascript files -->
-	<!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script> -->
+	<!-- Javascript files -->	
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="assets/js/jquery-1.11.1.min.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/bootstrap/js/bootstrap.3.min.js"></script>
+	
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
 	<script src="assets/js/imagesloaded.pkgd.js"></script>
 	<script src="assets/js/jquery.sticky.js"></script>
@@ -433,5 +453,4 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/jsplayer.js"></script>
 </body>
-
 </html>

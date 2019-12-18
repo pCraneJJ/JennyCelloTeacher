@@ -23,6 +23,9 @@ img {
 a {
 	color: #E7746F;
 }
+.navbar-toggle {
+	margin-top: 25px !important;
+}
 
 a:hover {
 	text-decoration: none;
@@ -32,7 +35,6 @@ a:hover {
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
-
 
 .navbar a,
 .form-control {
@@ -349,7 +351,7 @@ textarea.form-control {
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	/* background-position: 50% 50%; */
+	background-position: center top; 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -381,7 +383,7 @@ textarea.form-control {
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
 	padding: 0 15px;
-}
+} 
 
 .intro h1{
     font-weight: 800;
@@ -396,7 +398,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Servise
+ * Service
 /* ---------------------------------------------- */
 
 .iconbox {
@@ -532,14 +534,14 @@ textarea.form-control {
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: #fff;
+	background: #fff; 
 	padding: 0;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	/* font-size: 11px; */
+	/* font-size: 11px;  */
 	letter-spacing: 3px;
 	color: #222;
 }
@@ -600,6 +602,9 @@ textarea.form-control {
 	color: #fff;
 	font-size: 15px;
 	line-height: 30px;
+}
+.scroll-link {
+	cursor: pointer;
 }
 
 .scroll-up a:hover,
@@ -697,9 +702,12 @@ textarea.form-control {
 		font-size: smallest;
 		text-transform: unset;
 		font-family: Raleway, sans-serif; 
-	}
+	} 
 	.figcaption {
 		font-size: x-small;
+	}
+	.navbar-custom .navbar-nav .dropdown-menu > li > a {
+		font-size: 11px; 
 	}
 }
 
