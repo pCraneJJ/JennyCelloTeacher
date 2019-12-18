@@ -1,5 +1,5 @@
 (function($){
-	
+
 	function scrollToID(id, speed){
 		var offSet = 50;
 		var targetOffset = $(id).offset().top - offSet;
@@ -28,23 +28,21 @@
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
 		/* ---------------------------------------------- */
-		
-		$('a[href*=#]').bind("click", function(e){
-			e.preventDefault();
-			var anchor = $(this);
-			//var sectionID = $(this).attr("data-id");
-			//scrollToID('#' + sectionID, 750);
-			scrollToID($(anchor.attr('href')),1000);
-			//  var anchor = $(this);
-			//  $('html, body').stop().animate({
-			//  	scrollTop: $(anchor.attr('href')).offset().top - 25
-			//  }, 1000);
-			//  if (mainNav.hasClass("open")) {
-			// 	mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-			// 	mainNav.removeClass("open");
-			// }
-			// e.preventDefault();
+		$('.scroll-link').on('click', function(event){
+			event.preventDefault();
+			var sectionID = $(this).attr("data-id");
+			scrollToID('#' + sectionID, 750);
 		});
+		// scroll to top action
+		$('.scroll-top').on('click', function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop:0}, 'slow'); 		
+		});
+		// mobile nav toggle
+		$('#nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			$('#main-nav').toggleClass("open");
+		});		
 
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 100) {
