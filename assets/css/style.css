@@ -8,6 +8,52 @@
  * Licensed under MIT
 */
 
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', 'Helvetica Neue', arial, sans-serif;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	background: #222;
+	z-index: 10;
+}
+.header .navbar-brand {
+	font-weight: 900;
+}
+.header .navbar {
+	margin: 0;
+	border: none;
+}
+.back-to-top:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+}
+hr {border-color: #ddd;}
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+/* @media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+} */
+/* end of demo styles */
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	/*color: #666;*/
@@ -23,9 +69,9 @@ img {
 a {
 	color: #E7746F;
 }
-.navbar-toggle {
-	margin-top: 25px !important;
-}
+/* .navbar-toggle { */
+	/* margin-top: 25px !important; */
+/* } */
 
 a:hover {
 	text-decoration: none;
@@ -36,14 +82,14 @@ a:hover {
  * Transition elsements
 /* ---------------------------------------------- */
 
-.navbar a,
-.form-control {
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	   -moz-transition: all 0.4s ease-in-out 0s;
-		-ms-transition: all 0.4s ease-in-out 0s;
-		 -o-transition: all 0.4s ease-in-out 0s;
-			transition: all 0.4s ease-in-out 0s;
-}
+ .navbar a, 
+ .form-control { 
+	 -webkit-transition: all 0.4s ease-in-out 0s; 
+	    -moz-transition: all 0.4s ease-in-out 0s;
+		 -ms-transition: all 0.4s ease-in-out 0s;
+		  -o-transition: all 0.4s ease-in-out 0s;
+			 transition: all 0.4s ease-in-out 0s;
+ } 
 
 a,
 .btn {
@@ -123,7 +169,6 @@ h6 {
 		 -o-border-radius: 3px;
 			border-radius: 3px;
 }
-
 
 /* ---------------------------------------------- /*
  * Input-group
@@ -512,75 +557,6 @@ textarea.form-control {
 	border: 1px solid rgba(255, 255, 255, .5);
 	color: rgba(255, 255, 255, .8);
 }
-
-/* ---------------------------------------------- /*
- * Navigation
-/* ---------------------------------------------- */
-
-.header {
-	border-bottom: 1px solid #f5f5f5;
-	position: fixed;
-	width: 100%;
-	z-index: 998;
-}
-
-.navbar-custom {
-	border: 0;
-	border-radius: 0;
-	margin: 0;
-	text-transform: uppercase;
-	font-family: Raleway, sans-serif; 
-}
-
-.navbar-custom,
-.navbar-custom .dropdown-menu {
-	background: #fff; 
-	padding: 0;
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav > li > a,
-.navbar-custom .navbar-nav .dropdown-menu > li > a {
-	/* font-size: 11px;  */
-	letter-spacing: 3px;
-	color: #222;
-}
-
-.navbar-custom .nav li.active,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .navbar-nav > li.active a {
-	background: none;
-	outline: 0;
-	color: #E7746F;
-}
-
-.navbar-custom .navbar-brand {
-	font-weight: 700;
-	font-size: 22px;
-    font-family: Lobster, cursive;
-}
-
-.navbar-custom .dropdown-menu {
-	border: 0;
-	border-top: 2px solid #E7746F;
-	border-radius: 0;
-}
-
-.navbar-custom .dropdown-menu > li > a {
-	padding: 10px 20px;
-}
-
-.navbar-custom .nav .open > a,
-.navbar-custom .dropdown-menu > li > a:hover,
-.navbar-custom .dropdown-menu > li > a:focus {
-	background: #f5f5f5;
-}
-
-.navbar-custom .navbar-toggle .icon-bar {
-	background: #222;
-}
-
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -591,6 +567,7 @@ textarea.form-control {
 	z-index: 999;
 	bottom: 2em;
 	right: 2em;
+	cursor: pointer;
 }
 
 .scroll-up a {
@@ -724,7 +701,7 @@ textarea.form-control {
 	}
 	.header {		
 		width: 80%;
-	}
+	} 
 }
 
 /*--------------------------------*/
