@@ -34,15 +34,15 @@
 			scrollToID('#' + sectionID, 750);
 		});
 		// scroll to top action
-		$('.scroll-top').on('click', function(event) {
+		$('.scroll-up').on('click', function(event) {
 			event.preventDefault();
 			$('html, body').animate({scrollTop:0}, 'slow'); 		
 		});
 		// mobile nav toggle
-		$('#nav-toggle').on('click', function (event) {
-			event.preventDefault();
-			$('#main-nav').toggleClass("open");
-		});		
+		// $('#nav-toggle').on('click', function (event) {
+		// 	event.preventDefault();
+		// 	$('#main-nav').toggleClass("open");
+		// });		
 
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 100) {
@@ -56,12 +56,12 @@
 		 * Navbar
 		/* ---------------------------------------------- */
 
-		$('.header').sticky({
-			topSpacing: 0
-		});
+		// $('.header').sticky({
+		// 	topSpacing: 0
+		// });
 
 		$('body').scrollspy({
-			target: '.navbar-custom',
+			target: '.navbar-fixed-top',
 			offset: 70
 		})
         
