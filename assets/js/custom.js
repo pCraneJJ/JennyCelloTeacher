@@ -153,13 +153,12 @@
 
 			e.preventDefault();
 					var params = $('#myform').serializeArray().reduce(function(obj, item) {
-				 obj[item.name] = item.value;
-				 return obj;
-			  }, {});
+					obj[item.name] = item.value;
+					return obj;
+				}, {});
 
-		   var service_id = "jenny_crane";
-		   var template_id = "template_KHYTTmrV";
-
+			var service_id = "jenny_crane";
+			var template_id = "template_KHYTTmrV";
 			var c_name = $('#from_name').val();
 			var c_email = $('#reply_to').val();
 			var c_message = $('#message_html').val();
@@ -170,16 +169,14 @@
 				 response.html('<i class="fa fa-warning"></i> Please provide an email, name and message.');
 			}
 			else {
-				var service_id = "jenny_crane";
-				emailjs.send(service_id, template_id, params);
-				var message = 'Thank you for your email xxx.'.replace('xxx',c_name);
-				var success = '<i class="fa fa-check"></i>xxx'.replace('xxx', message) +
-				'</br><i class="fa fa-bookmark"></i>&nbsp;&nbsp;I will be back to you.';
-				response.html(success);
+					var service_id = "jenny_crane";
+					emailjs.send(service_id, template_id, params);
+					var message = 'Thank you for your email xxx.'.replace('xxx',c_name);
+					var success = '<i class="fa fa-check"></i>xxx'.replace('xxx', message) +
+					'</br><i class="fa fa-bookmark"></i>&nbsp;&nbsp;I will be back to you.';
+					response.html(success);
 				}           
             	return false;
 			});
-
 	});
-
 })(jQuery);
