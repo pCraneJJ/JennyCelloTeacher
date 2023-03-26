@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Jenny Crane - Cellist</title>
+	<meta name="keywords" content="music teacher, cellist, electric cello, studio musician, wedding music, event music">
+	<meta name="description" content="Email me to consultat for your wedding music.">
+	<meta name="author" content="Patrick Crane">
+
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/jsplayer.css" rel="stylesheet" media="screen">
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+	<script src="assets/js/modernizr.custom.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header">
+					<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="main-nav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#" data-id="mybio" class="scroll-link">About Me</a></li>
+						<li><a href="#" data-id="studio" class="scroll-link">Studio Recording</a></li>
+						<li><a href="#" data-id="events" class="scroll-link">Events</a></li>
+						<li><a href="#" data-id="contact" class="scroll-link">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!--/.header-->
+
+	<!-- Home start -->
+	<section id="home" class="pfblock pfblock-image screen-height">
+		<div class="intro">
+			<div class="start, text-center">Hello, my name is Jenny Crane and I am a</div>
+			<h2>Cellist</h2>
+		</div>
+		<a data-id="mybio" class="scroll-link">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+	</section>
+	<!-- Home end -->
+
+	<!-- My bio start -->
+	<section id="mybio" class="pfblock pfblock-gray">
+		<div class="container">
+			<h3 class="iconbox-title text-center">Jenny Crane</h3>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="wow fadeInUp">
+						<img src="assets/images/photo.jpg" alt="Jenny Crane" class="pull-left" style="padding-right: 10px;">
+						<p style="font-size: 11px; font-weight: 600;" class="text-justify">
+							I am a multifaceted cellist who plays music from Bach to Hip Hop.
+							I teach in Calgary and have my own recording studio.
+							I hold a master’s degree in music from the San Francisco Conservatory.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">				
+				<div class="col-md-6 col-sm-12">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-puzzle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Studio Musician</h3>
+							<div class="iconbox-desc">
+								I have my own recording studio. I can work with you in composing or improvising an electric or traditional
+								cello track enriching your video or music production.
+								<br/>
+								<a href="#myMusic">Listen to my recordings.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-screen-smartphone"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Events</h3>
+							<div class="iconbox-desc">
+								I have provided classical and popular music for weddings and other events which contributed to everyone's
+								enjoyment.
+								<a href="#clientTestimonial">See feedback from my clients.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- My bio end -->
+
+	<!-- My music start -->
+	<section id="myMusic" class="container pfblock2">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="pfblock-header wow fadeInUp">
+					<h3 class="pfblock-title">My Music and Performances</h3>
+					<div class="pfblock-line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-jsp">
+			<audio id="audio" preload="none" tabindex="0">			
+				<source src="assets/music/BarberAdagio.wav" data-track-number="1" />
+				<source src="assets/music/ShapeOfYourHeart.wav" data-track-number="2" />					
+				<source src="assets/music/Yummy.wav" data-track-number="3" />
+				<source src="assets/music/RoseGold.wav" data-track-number="4" />
+				<source src="assets/music/SaveMe.wav" data-track-number="5" />	
+				Your browser does not support HTML5 audio.
+			</audio>
+			<div class="player">
+				<div class="large-toggle-btn">
+					<i class="large-play-btn"><span class="screen-reader-text">Large toggle button</span></i>
+				</div>
+				<!-- /.play-box -->
+				<div class="info-box">
+					<div class="track-info-box">
+						<div class="track-title-text"></div>
+						<div class="audio-time">
+							<span class="current-time">00:00</span> /
+							<span class="duration">00:00</span>
+						</div>
+					</div>
+					<!-- /.info-box -->
+					<div class="progress-box">
+						<div class="progress-cell">
+							<div class="progress">
+								<div class="progress-buffer"></div>
+								<div class="progress-indicator"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.progress-box -->
+				<div class="controls-box">
+					<i class="previous-track-btn disabled"><span class="screen-reader-text">Previous track button</span></i>
+					<i class="next-track-btn"><span class="screen-reader-text">Next track button</span></i>
+				</div>
+				<!-- /.controls-box -->
+			</div>
+			<!-- /.player -->
+
+			<div class="play-list">
+				
+			<div class="play-list-row" data-track-row="1">
+				<div class="small-toggle-btn">
+						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+					</div>
+					<div class="track-number">
+					</div>
+					<div class="track-title">
+						<a class="playlist-track" href="#" data-play-track="1">Samual Barber Adagio</a>
+					</div>
+				</div>
+				<div class="play-list-row" data-track-row="2">
+					<div class="small-toggle-btn">
+						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+					</div>
+					<div class="track-number">
+					</div>
+					<div class="track-title">
+						<a class="playlist-track" href="#" data-play-track="2">Sting Cover - Shape of Your Heart</a>
+					</div>
+				</div>
+				<div class="play-list-row" data-track-row="3">
+					<div class="small-toggle-btn">
+						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+					</div>
+					<div class="track-number">
+					</div>
+					<div class="track-title">
+						<a class="playlist-track" href="#" data-play-track="3">Justin Bieber Cover - Yummy</a>
+					</div>
+				</div>
+				<div class="play-list-row" data-track-row="4">
+					<div class="small-toggle-btn">
+						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+					</div>
+					<div class="track-number">
+					</div>
+					<div class="track-title">
+						<a class="playlist-track" href="#" data-play-track="4">Rose Gold</a>
+					</div>
+				</div>
+				<div class="play-list-row" data-track-row="5">
+					<div class="small-toggle-btn">
+						<i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+					</div>
+					<div class="track-number">
+					</div>
+					<div class="track-title">
+						<a class="playlist-track" href="#" data-play-track="5">Save Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul class="nav nav-tabs">				
+				<li class="active"><a data-toggle="tab" href="#feelingGood">Feeling Good</a></li>
+				<li><a data-toggle="tab" href="#classical">Frank Bridge Sonata</a></li>
+				<li><a data-toggle="tab" href="#schumann">Schumann</a></li>
+				<li><a data-toggle="tab" href="#event">Events</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="feelingGood" class="tab-pane fade  in active embed-responsive embed-responsive-16by9 text-center">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Zf1A_s98iN4" allowfullscreen></iframe>
+				</div>
+				<div id="classical" class="tab-pane fade  embed-responsive embed-responsive-16by9 text-center">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dnbmJ2LRtM4" allowfullscreen></iframe>
+				</div>				
+				<div id="schumann" class="tab-pane fade embed-responsive embed-responsive-16by9 text-center">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cgCo1j1iS1M" allowfullscreen></iframe>
+				</div>
+				<div id="event" class="tab-pane fade embed-responsive embed-responsive-16by9 text-center">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mKqCdO-mJlg" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- My music end -->
+
+	<!-- Studio start -->
+	<section class="pfblock pfblock-gray" id="studio">
+		<div class="container">
+			<h2 class="pfblock-title text-center">Studio Recording</h2>
+			<div class="skills">
+				<div class="pfblock-header wow fadeInUp">
+					<div class="pfblock-line"></div>
+					<div class="pfblock-subtitle text-justify" style="color: navy;">
+						I have my own recording studio built around a MacBook Pro, UA Apollo Twin MK2, Neumann condenser microphone and
+						room treatments. I collaborate with other musicians locally and internationally.
+						<a href="#myMusic">Listen to my recordings.</a>
+						<a href="#contact">Contact me</a> to discuss what you are looking for.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Studio end -->
+
+	<!-- Event start -->
+	<section class="pfblock pfblock-gray" id="events">
+		<div class="container">
+			<h2 class="pfblock-title text-center">Events</h2>
+			<div class="skills">
+				<div class="pfblock-header wow fadeInUp">
+					<div class="pfblock-line"></div>
+					<div class="pfblock-subtitle text-justify" style="color: navy;">
+						I can work with your wedding planner to put together a music list or ensemble that will be complementary.
+						<a href="#contact">Contact me</a> to discuss what you are looking for.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Event end -->
+
+	<!-- Testimonials start -->
+	<section id="clientTestimonial" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">						
+						<h3 class="pfblock-title">What my clients say</h3>
+					</div>
+				</div>
+			</div>
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+				<div class="cbp-qtcontent">
+					<img src="assets/images/client-1.jpg" alt="Client testimonial" />
+					<blockquote>
+						<p>She is a professional musician and know very well what you like. She made a very nice video and her
+							performance is fantastic. She is the best and I'm glad to deal with her again.</p>
+						<footer>Hosyosf - Feb 2019</footer>
+					</blockquote>
+				</div>
+				<div class="cbp-qtcontent">
+					<img src="assets/images/client-2.jpg" alt="Client testimonial" />
+					<blockquote>
+						<p>Fast, highly proficient in her skills and would highly recommend!</p>
+						<footer>atemproperties - Jan 2019</footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Testimonial end -->
+
+	<!-- Call to action start -->
+	<section id="contact" class="calltoaction">
+		<div class="container">
+			<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
+			<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+				I'm available for freelance projects or events.
+			</div>
+			<h2 class="wow slideInRight" data-wow-delay=".1s">Contact Me</h2>
+		</div>
+	</section>
+	<!-- Call to action end -->
+
+	<!-- Contact start -->
+	<div class="pfblock2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<form id="myform">
+						<div class="ajax-hidden">
+							<input type="hidden" name="contact_number">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="from_name">Name</label>
+								<input type="text" id="from_name" class="form-control" name="from_name" placeholder="Name">
+							</div>
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="reply_to">Email</label>
+								<input type="email" id="reply_to" class="form-control" name="reply_to" placeholder="E-mail">
+							</div>
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="message_html" name="message_html" rows="7" placeholder="Message"></textarea>
+							</div>
+							<button id="myformbutton" type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send
+								Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="social-links">
+				<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#contact" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+			</ul>
+			<p class="copyright">
+				©2019 Jenny Crane
+			</p>
+			<div>
+				Photographs by <a href="https://www.imageBrothers.com" title="Stephan Dastrous" target="_blank">
+					Stephan Dastrous</a> from <a href="https://www.imageBrothers.com/" target="_blank" title="Image Brothers">www.imageBrothers.com</a>
+			</div>
+			<!-- <div>
+				Icons made by <a href="https://www.flaticon.com?vitaly-gorbachev" target="_blank" title="Vitaly Gorbachev">Vitaly
+							Gorbachev</a> from <a href="https://www.flaticon.com" target="_blank" title="Flaticon">www.flaticon.com</a>
+			</div> -->
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+	<div class="scroll-up">
+		<a href="#" data-id="home"><i class="fa fa-angle-up"></i></a>
+	</div>
+	<!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157163687-1">
+	</script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-157163687-1');
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/jsplayer.js"></script>
+</body>
+
+</html>
